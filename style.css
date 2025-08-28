@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 13px;
+    position: relative;
+    height: 100vh;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 24px;
+    vertical-align: middle;
+
+
+}
+nav ul a:hover {
+    text-decoration: underline;
+}
+nav ul li {
+    list-style-type: none;
+    padding: 12px;
+}
+
+.menu-icon img {
+    width: 15px;
+}
+.menu-icon:hover {
+    border-radius: 50%;
+    background-position: center;
+    background-color: rgba(60, 64, 67, .08);
+}
+/*search*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.google-logo {
+    width: 350px;
+    margin-bottom: -80px;
+    margin-top: 30px;
+}
+
+.search-bar {
+    border: 1px solid #dadce0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 3;
+    min-height: 44px;
+    box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);
+    border-radius: 26px;
+    margin: 0 auto;
+    width: auto;
+    padding: 5px 8px 0 14px;
+}
+
+.search-bar:hover {
+    background: #fff;
+    box-shadow: 0 2px 8px 1px rgba(64, 60, 67, .24);
+}
+
+.search-bar img {
+    width: 17px;
+}
+.search-bar div:first-of-type {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+    height: 46px;
+}
+
+.search-bar div:last-of-type {
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar div:first-of-type img {
+    width: 14px;
+    margin-left: 4px;
+}
+
+.search-bar div:last-of-type img {
+    margin: auto 10px;
+    cursor: pointer;
+}
+/* .search-bar div:last-of-type img:last-of-type {
+
+} */
+textarea {
+    resize: none;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+    color: #000;
+    outline: none;
+    word-wrap: break-word;
+    display: flex;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.google-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.google-btn a {
+    text-decoration: none;
+    display:  flex;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #3c4043;;
+    font-size: 14px;
+    margin: 11px 5px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.google-btn a:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+/* footer */
+footer {
+    background: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    font-size: 14px;
+}
+
+footer div:first-of-type {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+
+footer div:first-of-type p {
+    font-size: 15px;
+    color: #1f1f1f;
+}
+
+footer div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+footer div:last-of-type li {
+    list-style-type: none;
+    padding: 0 15px;
+}
+
+footer div:last-of-type ul {
+    display: flex;
+}
+
+footer div:last-of-type a {
+    color: #1f1f1f;
+    text-decoration: none;
+}
+
+footer div:last-of-type a:hover {
+    text-decoration: underline;
+}
