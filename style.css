@@ -191,11 +191,24 @@ footer div:last-of-type a:hover {
     text-decoration: underline;
 }
 
-/* mobile */
+/* Responsive Styles */
 
+/* Large devices (desktops, less than 1200px) */
+@media only screen and (max-width: 1200px) {
+    .search-bar {
+        max-width: 600px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
 @media only screen and (max-width: 992px) {
     .search-bar {
         max-width: 484px;
+    }
+    
+    .google-logo {
+        width: 280px;
+        margin-bottom: -60px;
     }
 
     footer div:last-of-type {
@@ -208,8 +221,54 @@ footer div:last-of-type a:hover {
     }
 }
 
+/* Small devices (landscape phones, less than 768px) */
+@media only screen and (max-width: 768px) {
+    .search-bar {
+        max-width: 400px;
+        padding: 5px 5px 0 10px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .google-btn a {
+        padding: 0 12px;
+        font-size: 13px;
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
 @media only screen and (max-width: 576px) {
     .search-bar {
         max-width: 300px;
+        min-height: 40px;
+    }
+
+    .google-logo {
+        width: 200px;
+        margin-bottom: -40px;
+        margin-top: 20px;
+    }
+
+    .google-btn {
+        flex-direction: column;
+    }
+
+    .google-btn a {
+        margin: 5px;
+    }
+
+    footer div:first-of-type {
+        padding: 10px 15px;
+    }
+
+    footer div:last-of-type {
+        padding: 10px;
+    }
+
+    footer div:last-of-type ul {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
