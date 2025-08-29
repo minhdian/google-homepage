@@ -190,3 +190,26 @@ footer div:last-of-type a {
 footer div:last-of-type a:hover {
     text-decoration: underline;
 }
+
+/* mobile */
+
+@media only screen and (max-width: 992px) {
+    .search-bar {
+        max-width: 484px;
+    }
+
+    footer div:last-of-type {
+        flex-direction: column;
+    }
+
+    footer li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .search-bar {
+        max-width: 300px;
+    }
+}
